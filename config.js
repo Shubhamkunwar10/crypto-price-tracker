@@ -13,3 +13,9 @@ export const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY;
 
 // supported coins
 export const SUPPORTED_COINS = ["BTC", "ETH", "ATOM", "OSMO", "XPRT", "INJ"];
+
+// supported hashtags
+export const HASH_TAGS = {
+  BTC : ["#BTC", "#Bitcoin", "#Crypto", "#Cryptocurrency", "#Blockchain"],
+  ETH : ["#ETH", "#Ethereum"],
+}

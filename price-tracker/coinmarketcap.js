@@ -5,7 +5,7 @@ import {
 } from "../config.js";
 import { Client } from "../helper/request.js";
 
-class CoinMarketCap {
+export class CoinMarketCap {
   constructor() {
     this.coinMarketCap = new Client(COINMARKETCAP_ENDPOINT);
     this.coinMarketCap.addHeader("X-CMC_PRO_API_KEY", COINMARKETCAP_API_KEY);

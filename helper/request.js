@@ -1,4 +1,5 @@
 // this would be a helper function to make request to the server to get the data
+import fetch from 'node-fetch';
 
 export class Client {
   constructor(baseUrl) {
