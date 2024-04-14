@@ -2,6 +2,7 @@ import { generateImage } from './canvas.js';
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { HASH_TAGS, SUPPORTED_COINS } from '../config.js';
 import { CoinMarketCap } from "../price-tracker/coinmarketcap.js"
+import { log } from '../index.js';
 // import { Twitter } from '../app.js';
 
 // Create the 'tweets' folder if it doesn't exist
@@ -53,9 +54,10 @@ export async function generateAndSaveImage() {
                         generateImage(formattedText)
                             .then((image) => {
                                 // Save the image with coin name as filename in the 'tweets' folder
-                                writeFileSync(`${folderName}/${coin}.png`, image);
-                                console.log(`Image for ${coin} saved successfully!`);
-                                console.log(tweetText);
+                                // writeFileSync(`${folderName}/${coin}.png`, image);
+                                // console.log(`Image for ${coin} saved successfully!`);
+                                log(`Image for ${coin} saved successfully! ${tweetText}`);
+                                // console.log(tweetText);
                                 messages.push({ tweetText, image });
                                 resolve(); // Resolve the promise after image is generated and saved
                             })

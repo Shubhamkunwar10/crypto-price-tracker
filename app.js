@@ -1,6 +1,7 @@
 import { TwitterApi } from "twitter-api-v2";
 
 import dotenv from "dotenv";
+import { log } from "./index.js";
 
 dotenv.config();
 
@@ -34,7 +35,8 @@ export class Twitter {
           tagged_user_ids: taggedUserIds,
         },
       });
-      console.log("Tweet sent successfully:", tweet);
+      // console.log("Tweet sent successfully:", tweet);
+      log("Tweet sent: " +  JSON.stringify(tweet));
     } catch (error) {
       console.error("Error sending tweet:", error);
     }
