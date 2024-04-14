@@ -8,7 +8,10 @@ export const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET;
 
 // CoinMarketCap Config
 export const COINMARKETCAP_ENDPOINT =
-  "https://sandbox-api.coinmarketcap.com/v1";
+  "https://pro-api.coinmarketcap.com/v1";
+  
+  // export const COINMARKETCAP_ENDPOINT =
+  // "https://sandbox-api.coinmarketcap.com/v1";
 export const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY;
 
 // supported coins
