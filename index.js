@@ -4,6 +4,10 @@ import { generateAndSaveImage } from "./helper/test.js";
 
 import fs from "fs";
 import path from "path";
+import {
+  getElapsedTimeSinceLastTweet,
+  saveLastTweetTime,
+} from "./helper/utils.js";
 
 function getCurrentDir() {
   const currentUrl = import.meta.url;
@@ -32,12 +36,23 @@ async function main() {
   // console.log("MESSAGES:", mesages)
   for (let i = 0; i < mesages.length; i++) {
     const message = mesages[i];
-    setInterval(async () => {
+    setTimeout(async () => {
       await twitter.sendTweetWithMedias(message.tweetText, [message.image]);
       log("Tweet sent: " + message.tweetText);
     }, TWEET_INTERVAl.NEXT_TWEET_AFTER);
+    saveLastTweetTime();
   }
 }
 
+// check if the time elapsed since the last tweet is greater than the next tweet time
+// if it is, then tweet instantly
+// else wait for the next tweet time
+const elapsedTime = getElapsedTimeSinceLastTweet();
+if (elapsedTime >= TWEET_INTERVAl.NEXT_TWEET_TIME) {
+  main();
+} else {
+  const timeToWait = TWEET_INTERVAl.NEXT_TWEET_TIME - elapsedTime;
+  setTimeout(main, timeToWait);
+}
 main();
 setInterval(main, TWEET_INTERVAl.NEXT_TWEET_TIME);
