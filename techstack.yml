@@ -1,0 +1,186 @@
+repo_name: Shubhamkunwar10/crypto-price-tracker
+report_id: ae9d5b8e6aa2f3fb8360652589f84033
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-11T07:16:41+00:00'
+requested_by: Shubhamkunwar10
+provider: github
+branch: main
+detected_tools_count: 13
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker
+  detection_source: Repo Metadata
+- name: ExpressJS
+  description: Sinatra inspired web development framework for node.js -- insanely
+    fast, flexible, and simple
+  website_url: http://expressjs.com/
+  version: 4.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/1163/hashtag.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
+- name: Dotenv
+  description: Loads environment variables from .env for Nodejs projects
+  website_url: https://github.com/motdotla/dotenv
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker
+  detection_source: Repo Metadata
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
+- name: Twitter API
+  description: Build bots that communicate smartly.
+  website_url: https://twitter.com/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/2466/twitterdev_gear.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
+- name: express
+  description: Fast, unopinionated, minimalist web framework
+  package_url: https://www.npmjs.com/express
+  version: 4.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
+  vulnerabilities:
+  - name: Express.js Open Redirect in malformed URLs
+    cve_id: CVE-2024-29041
+    cve_url: https://github.com/advisories/GHSA-rv95-896h-c2vc
+    detected_date: Mar 26
+    severity: moderate
+    first_patched: 4.19.2
+- name: canvas
+  description: Canvas graphics API backed by Cairo
+  package_url: https://www.npmjs.com/canvas
+  version: 2.11.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16664/default_783b9b6c17b863f264c1418b0eb831316f741afd.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
+- name: cross-env
+  description: Run scripts that set and use environment variables across platforms
+  package_url: https://www.npmjs.com/cross-env
+  version: 7.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15828/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-15 06:45:19.000000000 Z
+- name: fs
+  description: This package name is not currently in use, but was formerly occupied
+    by another package
+  package_url: https://www.npmjs.com/fs
+  version: 0.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16098/default_63a34654baee757196ddff2457bd1c9a0dfb7287.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
+- name: node-fetch
+  description: A light-weight module that brings window.fetch to node.js
+  package_url: https://www.npmjs.com/node-fetch
+  version: 2.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15978/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-15 06:45:19.000000000 Z
+- name: twit
+  description: Twitter API client for node
+  package_url: https://www.npmjs.com/twit
+  version: 2.2.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18372/default_6da9f8de2035c7ad69ecf412df9fe80b73f9797a.png
+  detection_source_url: https://github.com/Shubhamkunwar10/crypto-price-tracker/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 0xankit
+  last_updated_on: 2024-04-14 06:13:05.000000000 Z
